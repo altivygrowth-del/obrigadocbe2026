@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferência Bíblica Ensinai 2026 - Semear</title>
+    
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark-blue: #0a1f44;
+            --bg-gradient-blue: linear-gradient(135deg, #0b2e68 0%, #164894 50%, #0a1f44 100%);
+            --accent-cyan: #00b4d8;
+            --accent-orange: #f78f1e;
+            --accent-orange-hover: #d97706;
+            --text-light: #ffffff;
+            --text-muted: #cbd5e1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: var(--bg-gradient-blue);
+            color: var(--text-light);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* --- CONTAINER GERAL --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- HEADER / HERO SECTION --- */
+        header {
+            padding-top: 280px; 
+            padding-bottom: 60px;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(10, 31, 68, 0.1), rgba(10, 31, 68, 0.8)), 
+                        url('fundo site.png') no-repeat center top / cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* --- VIDEO CONTAINER (YOUTUBE EMBED) --- */
+        .video-section {
+            margin: 0 auto 35px;
+            width: 100%;
+            max-width: 780px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            background: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- BOTÃO DE AÇÃO HERO --- */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1.1rem;
+        }
+
+        .btn-cta {
+            background-color: var(--accent-orange);
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(247, 143, 30, 0.4);
+        }
+
+        .btn-cta:hover {
+            background-color: var(--accent-orange-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(247, 143, 30, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            header { padding-top: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION ÚNICA -->
+    <header>
+        <div class="container">
+            <!-- VÍDEO DO YOUTUBE -->
+            <div class="video-section">
+                <div class="video-wrapper">
+                    <!-- Insira aqui o ID do novo vídeo no atributo src -->
+                    <iframe src="https://www.youtube-nocookie.com/embed/SEU_NOVO_VIDEO_ID_AQUI" title="Vídeo de Apresentação" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- BOTÃO SEMEAR -->
+            <div class="action-buttons">
+                <!-- Substitua o atributo href pelo link de destino do pagamento/oferta -->
+                <a href="https://SEU_LINK_DE_SEMEAR_AQUI" target="_blank" class="btn btn-cta">
+                    <i class="fa-solid fa-seedling"></i> Quero semear novamente
+                </a>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>
