@@ -38,16 +38,16 @@
             overflow-x: hidden;
         }
 
-        /* --- CONTAINER AMPLIADO --- */
+        /* --- CONTAINER GERAL --- */
         .container {
-            max-width: 1100px; /* Expandido para cobrir a área vermelha */
+            max-width: 950px; /* Ajuste equilibrado para a largura */
             width: 92%;
             margin: 0 auto;
         }
 
-        /* --- HEADER / HERO SECTION --- */
+        /* --- HEADER / HERO SECTION COM MAIS ESPAÇO NO TOPO --- */
         header {
-            padding-top: 190px; /* Reduzido para aproximar do texto "08 a 11 de Setembro" */
+            padding-top: 320px; /* Empurra o vídeo para baixo da escrita do banner */
             padding-bottom: 50px;
             text-align: center;
             background: linear-gradient(to bottom, rgba(10, 31, 68, 0.1), rgba(10, 31, 68, 0.8)), 
@@ -58,7 +58,7 @@
             justify-content: center;
         }
 
-        /* --- VIDEO CONTAINER GIGANTE --- */
+        /* --- VIDEO CONTAINER --- */
         .video-section {
             margin: 0 auto 30px;
             width: 100%;
@@ -66,7 +66,7 @@
 
         .video-wrapper {
             position: relative;
-            padding-bottom: 56.25%; /* Mantém a proporção de tela de cinema 16:9 */
+            padding-bottom: 56.25%; /* Mantém a proporção 16:9 */
             height: 0;
             border-radius: 20px;
             overflow: hidden;
@@ -119,7 +119,7 @@
         }
 
         @media (max-width: 768px) {
-            header { padding-top: 150px; }
+            header { padding-top: 220px; }
             .btn { font-size: 1rem; padding: 14px 28px; }
         }
     </style>
@@ -129,7 +129,7 @@
     <!-- HERO SECTION -->
     <header>
         <div class="container">
-            <!-- VÍDEO EXPANDIDO NO ESPAÇO VERMELHO -->
+            <!-- VÍDEO DO YOUTUBE -->
             <div class="video-section">
                 <div class="video-wrapper">
                     <iframe src="https://www.youtube-nocookie.com/embed/SEU_NOVO_VIDEO_ID_AQUI" title="Vídeo de Apresentação" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
