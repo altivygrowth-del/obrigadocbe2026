@@ -4,165 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conferência Bíblica Ensinai 2026 - Semear</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 <style>
-:root{
---bg-gradient-blue:linear-gradient(135deg,#0b2e68 0%,#164894 50%,#0a1f44 100%);
---accent-orange:#f78f1e;
---accent-orange-hover:#d97706;
---text-light:#fff;
-}
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif;}
-body{
-background:var(--bg-gradient-blue);
-color:var(--text-light);
-overflow-x:hidden;
-}
-.container{max-width:950px;width:92%;margin:auto;}
+:root{--bg:linear-gradient(135deg,#0b2e68 0%,#164894 50%,#0a1f44 100%);--o:#f78f1e;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Montserrat,sans-serif}
+body{background:var(--bg);color:#fff}
+.container{max-width:1100px;width:92%;margin:auto}
 header{
-padding-top:340px;
-padding-bottom:70px;
-background:
-linear-gradient(to bottom,rgba(10,31,68,.1),rgba(10,31,68,.85)),
-url('fundo site.png') no-repeat center top/cover;
+background:linear-gradient(to bottom,rgba(10,31,68,.1),rgba(10,31,68,.85)),url('fundo site.png') no-repeat center top/cover;
 min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
+padding:340px 0 70px;
 text-align:center;
 }
+.video-section{margin-top:110px;}
 .video-wrapper{
-    position:relative;
-    width:100%;
-    max-width:500px;
-    margin:0 auto;
-    aspect-ratio:16/9;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 25px 60px rgba(0,0,0,.65);
-    border:2px solid rgba(255,255,255,.15);
+max-width:650px;
+aspect-ratio:16/9;
+margin:0 auto;
+position:relative;
+overflow:hidden;
+border-radius:20px;
+box-shadow:0 25px 60px rgba(0,0,0,.6);
+border:2px solid rgba(255,255,255,.15);
+background:#000;
 }
-
-.video-wrapper iframe{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-}
-.contrib{
-margin-top:45px;
-}
-.contrib h2{
-font-size:2rem;
-font-weight:900;
-margin-bottom:10px;
-}
-.contrib p{
-color:#d8e3f0;
-max-width:700px;
-margin:0 auto 35px;
-line-height:1.7;
-}
-.grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:18px;
-}
-.card{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(8px);
-border:1px solid rgba(255,255,255,.15);
-border-radius:18px;
-padding:24px;
-transition:.3s;
-}
-.card:hover{
-transform:translateY(-6px);
-background:rgba(255,255,255,.12);
-}
-.card h3{
-font-size:1.1rem;
-margin-bottom:8px;
-}
-.valor{
-font-size:2rem;
-font-weight:900;
-margin-bottom:18px;
-}
-.btn{
-display:inline-flex;
-justify-content:center;
-align-items:center;
-padding:15px 26px;
-border-radius:999px;
-text-decoration:none;
-font-weight:800;
-color:#fff;
-transition:.3s;
-width:100%;
-}
-.btn:hover{transform:scale(1.03);}
-.green{background:#2E7D32;}
-.blue{background:#1565C0;}
-.orange{background:var(--accent-orange);}
-.darkblue{background:#0D47A1;}
-.gold{background:#c58b00;}
-.full{
-grid-column:1/-1;
-max-width:420px;
-margin:auto;
-width:100%;
-}
+.video-wrapper iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.contrib{margin-top:45px}
+.contrib h2{font-size:2rem;font-weight:900}
+.contrib p{max-width:720px;margin:15px auto 35px;color:#dbe6f3;line-height:1.7}
+.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px}
+.card{width:250px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(8px);border-radius:18px;padding:24px;transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.valor{font-size:2rem;font-weight:900;margin:12px 0 18px}
+.btn{display:block;width:100%;padding:15px;border-radius:999px;text-decoration:none;color:#fff;font-weight:800}
+.green{background:#2E7D32}.blue{background:#1565C0}.orange{background:#f78f1e}.dark{background:#0D47A1}.gold{background:#c58b00}
 @media(max-width:768px){
-
-header{
-padding-top:240px;
-padding-bottom:60px;
-}
-
-.video-wrapper{
-max-width:100%;
-}
-
-.contrib h2{
-font-size:1.5rem;
-}
-
-.grid{
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-.card{
-width:100%;
-max-width:380px;
-}
-
-.full{
-width:100%;
-max-width:380px;
-}
-
+header{padding-top:220px}
+.video-section{margin-top:80px}
+.video-wrapper{max-width:100%}
+.grid{flex-direction:column;align-items:center}
+.card{width:100%;max-width:380px}
 }
 </style>
 </head>
 <body>
-
 <header>
 <div class="container">
-
+<div class="video-section">
 <div class="video-wrapper">
-<iframe
-src="https://www.youtube-nocookie.com/embed/jMm8dioJaG0?rel=0&modestbranding=1"
-title="Vídeo de Apresentação"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/jMm8dioJaG0?rel=0&modestbranding=1" allowfullscreen></iframe>
+</div>
 </div>
 
 <section class="contrib">
@@ -170,42 +64,14 @@ allowfullscreen></iframe>
 <p>Escolha uma das opções abaixo e continue abençoando este projeto. Sua contribuição fortalece a Conferência Bíblica Ensinai e ajuda a alcançar ainda mais vidas.</p>
 
 <div class="grid">
-
-<div class="card">
-<h3>🌱 Semeador</h3>
-<div class="valor">R$ 300</div>
-<a class="btn green" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YM4SV7CNTRXQFV0QXWV5H">Contribuir</a>
-</div>
-
-<div class="card">
-<h3>🍃 Cultivador</h3>
-<div class="valor">R$ 500</div>
-<a class="btn blue" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YPJRMTHGEVCAG1M0CE7FH">Contribuir</a>
-</div>
-
-<div class="card">
-<h3>🤝 Colaborador</h3>
-<div class="valor">R$ 1.000</div>
-<a class="btn orange" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YRFXHMW1NBDWCV67Q4NB0">Contribuir</a>
-</div>
-
-<div class="card">
-<h3>🌳 Sustentador</h3>
-<div class="valor">R$ 1.500</div>
-<a class="btn darkblue" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YSWHGM57GZJ0ATTPHXH5N">Contribuir</a>
-</div>
-
-<div class="card full">
-<h3>⭐ Mantenedor</h3>
-<div class="valor">R$ 2.000+</div>
-<a class="btn gold" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YV6GF7AHW7NFJHEBJG40N">Contribuir</a>
-</div>
-
+<div class="card"><h3>🌱 Semeador</h3><div class="valor">R$ 300</div><a class="btn green" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YM4SV7CNTRXQFV0QXWV5H">Contribuir</a></div>
+<div class="card"><h3>🍃 Cultivador</h3><div class="valor">R$ 500</div><a class="btn blue" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YPJRMTHGEVCAG1M0CE7FH">Contribuir</a></div>
+<div class="card"><h3>🤝 Colaborador</h3><div class="valor">R$ 1.000</div><a class="btn orange" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YRFXHMW1NBDWCV67Q4NB0">Contribuir</a></div>
+<div class="card"><h3>🌳 Sustentador</h3><div class="valor">R$ 1.500</div><a class="btn dark" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YSWHGM57GZJ0ATTPHXH5N">Contribuir</a></div>
+<div class="card"><h3>⭐ Mantenedor</h3><div class="valor">R$ 2.000+</div><a class="btn gold" target="_blank" href="https://cobranca.c6pix.com.br/01KZ6YV6GF7AHW7NFJHEBJG40N">Contribuir</a></div>
 </div>
 </section>
-
 </div>
 </header>
-
 </body>
 </html>
